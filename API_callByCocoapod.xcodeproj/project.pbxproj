@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76CE3A8DDAF1C909FE799DBC /* Pods_API_callByCocoapod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6CED58FC860A603E04D705C /* Pods_API_callByCocoapod.framework */; };
 		90D442CC23D066730052BF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D442CB23D066730052BF48 /* AppDelegate.swift */; };
 		90D442CE23D066730052BF48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D442CD23D066730052BF48 /* ViewController.swift */; };
 		90D442D123D066730052BF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D442CF23D066730052BF48 /* Main.storyboard */; };
@@ -47,6 +48,11 @@
 		90D442E723D0667A0052BF48 /* API_callByCocoapodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = API_callByCocoapodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D442EB23D0667A0052BF48 /* API_callByCocoapodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_callByCocoapodUITests.swift; sourceTree = "<group>"; };
 		90D442ED23D0667A0052BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D442F923D070240052BF48 /* API_callByCocoapod.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = API_callByCocoapod.xcworkspace; sourceTree = "<group>"; };
+		90D442FB23D070390052BF48 /* API_callByCocoapod.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = API_callByCocoapod.xcworkspace; sourceTree = "<group>"; };
+		9E29825F4E94240885038144 /* Pods-API_callByCocoapod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API_callByCocoapod.debug.xcconfig"; path = "Target Support Files/Pods-API_callByCocoapod/Pods-API_callByCocoapod.debug.xcconfig"; sourceTree = "<group>"; };
+		E6CED58FC860A603E04D705C /* Pods_API_callByCocoapod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API_callByCocoapod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95D975E5C6E80EA94EA89D2 /* Pods-API_callByCocoapod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API_callByCocoapod.release.xcconfig"; path = "Target Support Files/Pods-API_callByCocoapod/Pods-API_callByCocoapod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76CE3A8DDAF1C909FE799DBC /* Pods_API_callByCocoapod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +81,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7131D511BBCCFAB7C6735BE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E29825F4E94240885038144 /* Pods-API_callByCocoapod.debug.xcconfig */,
+				F95D975E5C6E80EA94EA89D2 /* Pods-API_callByCocoapod.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		90D442BF23D066730052BF48 = {
 			isa = PBXGroup;
 			children = (
+				90D442F923D070240052BF48 /* API_callByCocoapod.xcworkspace */,
+				90D442FB23D070390052BF48 /* API_callByCocoapod.xcworkspace */,
 				90D442CA23D066730052BF48 /* API_callByCocoapod */,
 				90D442DF23D0667A0052BF48 /* API_callByCocoapodTests */,
 				90D442EA23D0667A0052BF48 /* API_callByCocoapodUITests */,
 				90D442C923D066730052BF48 /* Products */,
+				7131D511BBCCFAB7C6735BE8 /* Pods */,
+				C33AF3941027A40EC7F66832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +145,14 @@
 			path = API_callByCocoapodUITests;
 			sourceTree = "<group>";
 		};
+		C33AF3941027A40EC7F66832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6CED58FC860A603E04D705C /* Pods_API_callByCocoapod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90D442F023D0667A0052BF48 /* Build configuration list for PBXNativeTarget "API_callByCocoapod" */;
 			buildPhases = (
+				EB38D0336E79A3E10C759472 /* [CP] Check Pods Manifest.lock */,
 				90D442C423D066730052BF48 /* Sources */,
 				90D442C523D066730052BF48 /* Frameworks */,
 				90D442C623D066730052BF48 /* Resources */,
+				F0CFD278B3F29EC658178107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB38D0336E79A3E10C759472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-API_callByCocoapod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CFD278B3F29EC658178107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-API_callByCocoapod/Pods-API_callByCocoapod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-API_callByCocoapod/Pods-API_callByCocoapod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-API_callByCocoapod/Pods-API_callByCocoapod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90D442C423D066730052BF48 /* Sources */ = {
@@ -430,6 +502,7 @@
 		};
 		90D442F123D0667A0052BF48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E29825F4E94240885038144 /* Pods-API_callByCocoapod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +520,7 @@
 		};
 		90D442F223D0667A0052BF48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95D975E5C6E80EA94EA89D2 /* Pods-API_callByCocoapod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
